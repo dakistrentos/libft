@@ -6,7 +6,7 @@
 /*   By: Vtrentos <Vtrentos@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/03 08:41:15 by Vtrentos      #+#    #+#                 */
-/*   Updated: 2020/12/10 13:29:26 by Vtrentos      ########   odam.nl         */
+/*   Updated: 2020/12/27 20:32:05 by Vtrentos      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	while (n > 0)
 	{
 		if (*str1 != *str2)
-		{
 			return (*str1 - *str2);
-		}
 		str1++;
 		str2++;
 		n--;

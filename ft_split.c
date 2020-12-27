@@ -6,7 +6,7 @@
 /*   By: Vtrentos <Vtrentos@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/11 11:19:14 by Vtrentos      #+#    #+#                 */
-/*   Updated: 2020/12/26 11:38:36 by Vtrentos      ########   odam.nl         */
+/*   Updated: 2020/12/27 20:30:54 by Vtrentos      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,7 @@ char			**malloc_array(int words, char c, char *str2)
 		while (*str2 == c)
 			str2++;
 		ar[l] = string_ptr(str2, c);
-		if (!ar)
+		if (!ar[l])
 			return (NULL);
 		len = ft_strlen(ar[l]);
 		str2 = str2 + len;
