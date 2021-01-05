@@ -6,7 +6,7 @@
 /*   By: Vtrentos <Vtrentos@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/12/10 12:09:33 by Vtrentos      #+#    #+#                 */
-/*   Updated: 2020/12/26 11:28:53 by Vtrentos      ########   odam.nl         */
+/*   Updated: 2021/01/05 19:58:25 by Vtrentos      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define LIBFT_H
 
 # include <stdlib.h>
-# include <stddef.h>
 # include <unistd.h>
 
 typedef struct		s_list
