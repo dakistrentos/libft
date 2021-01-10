@@ -6,11 +6,26 @@
 /*   By: Vtrentos <Vtrentos@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/11 11:19:14 by Vtrentos      #+#    #+#                 */
-/*   Updated: 2021/01/10 13:14:16 by Vtrentos      ########   odam.nl         */
+/*   Updated: 2021/01/10 13:36:18 by Vtrentos      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static void		free_array(char **arr, int words)
+{
+	if (words <= 0)
+		free(arr);
+	else
+	{
+		while (words > 0)
+		{
+			free(arr[words]);
+			words--;
+		}
+	}
+	free(arr);
+}
 
 static int		count_words_letters(char *str3, char c)
 {
@@ -75,35 +90,16 @@ static char		**malloc_array(int words, char c, char *str2)
 			str2++;
 		ar[l] = string_ptr(str2, c);
 		if (!ar[l])
+		{
+			free_array(ar, l - 1);
 			return (NULL);
+		}
 		len = ft_strlen(ar[l]);
 		str2 = str2 + len;
 		l++;
 	}
 	ar[words] = NULL;
 	return (ar);
-}
-
-static char		**check_array(char **arr, int words)
-{
-	int		i;
-
-	i = 0;
-	while (words > 0)
-	{
-		if (!arr[words - 1])
-		{
-			while (arr[i])
-			{
-				free(arr[i]);
-				i++;
-			}
-			free(arr);
-			return (NULL);
-		}
-		words--;
-	}
-	return (arr);
 }
 
 char			**ft_split(char const *s, char c)
@@ -117,6 +113,5 @@ char			**ft_split(char const *s, char c)
 	arr = malloc_array(words, c, (char *)s);
 	if (!arr)
 		return (NULL);
-	arr = check_array(arr, words);
 	return (arr);
 }
