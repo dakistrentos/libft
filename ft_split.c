@@ -6,7 +6,7 @@
 /*   By: Vtrentos <Vtrentos@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/11 11:19:14 by Vtrentos      #+#    #+#                 */
-/*   Updated: 2020/12/27 20:30:54 by Vtrentos      ########   odam.nl         */
+/*   Updated: 2021/01/10 13:14:16 by Vtrentos      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ static char		*string_ptr(char *str2, char c)
 	return (string);
 }
 
-char			**malloc_array(int words, char c, char *str2)
+static char		**malloc_array(int words, char c, char *str2)
 {
 	char	**ar;
 	int		l;
@@ -84,7 +84,7 @@ char			**malloc_array(int words, char c, char *str2)
 	return (ar);
 }
 
-char			**check_array(char **arr, int words)
+static char		**check_array(char **arr, int words)
 {
 	int		i;
 
