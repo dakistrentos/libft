@@ -6,7 +6,7 @@
 /*   By: Vtrentos <Vtrentos@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/11 11:19:14 by Vtrentos      #+#    #+#                 */
-/*   Updated: 2021/01/10 13:36:18 by Vtrentos      ########   odam.nl         */
+/*   Updated: 2021/01/11 17:28:19 by Vtrentos      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,7 +86,7 @@ static char		**malloc_array(int words, char c, char *str2)
 		return (NULL);
 	while (l < words)
 	{
-		while (*str2 == c)
+		while (*str2 == c && *str2)
 			str2++;
 		ar[l] = string_ptr(str2, c);
 		if (!ar[l])
@@ -107,7 +107,7 @@ char			**ft_split(char const *s, char c)
 	int		words;
 	char	**arr;
 
-	if (!s || !c)
+	if (!s)
 		return (NULL);
 	words = count_words_letters((char *)s, c);
 	arr = malloc_array(words, c, (char *)s);
