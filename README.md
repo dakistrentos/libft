@@ -12,7 +12,7 @@ Some of them are the re-coded versions of the originals C functions while some o
 
 Part 1
 
-Reproduce the following C functions (These functions do not need any external functions):
+Reproduce the following libc functions (These functions do not need any external functions):
 - memset
 - bzero
 - memcpy
