@@ -8,7 +8,7 @@ Summary: The aim of this project is to code a C library regrouping usual functio
 you’ll be allowed to use in all your other projects.
 
 This is the first project at Codam (2020 cohort). The subject is to create your own library "libft.a" which contains useful functions.
-Some of them are the re-coded versions of the originals C functions while some others are new useful functions. 
+Some of them are the re-coded versions of the originals C functions while some others are new. 
 
 Part 1
 
