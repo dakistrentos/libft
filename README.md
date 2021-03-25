@@ -4,8 +4,8 @@ Libft project from Codam
 succeded with 115%
 
 
-"Summary: The aim of this project is to code a C library regrouping usual functions that
-you’ll be allowed to use in all your other projects."
+Summary: The aim of this project is to code a C library regrouping usual functions that
+you’ll be allowed to use in all your other projects.
 
 This is the first project at Codam (2020 cohort). The subject is to create your own library "libft.a" which contains useful functions.
 Some of them are the re-coded versions of the originals C functions while some others are new useful functions. 
