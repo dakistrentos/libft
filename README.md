@@ -12,7 +12,7 @@ Some of them are the re-coded versions of the originals C functions while some o
 
 Part 1
 
-Reproduced the following C functions (These functions do not need any external functions):
+Reproduce the following C functions (These functions do not need any external functions):
 - memset
 - bzero
 - memcpy
@@ -36,7 +36,7 @@ Reproduced the following C functions (These functions do not need any external f
 - toupper
 - tolower
 
-Also re-coded the following functions, using the function “malloc”:
+Also re-code the following functions, using the function “malloc”:
 - calloc
 - strdup
 
