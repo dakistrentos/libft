@@ -74,4 +74,4 @@ some of the rules are:
 - 'for', 'do...while', 'case', 'switch' and 'goto' are all forbidden!! 
 
 To successfully pass the project you have to be evaluated from 3 random peers and finally from "moulinette" (a very tough tester program) all at 100%! 
-(for exammple 95% is considered a faillure!)
+(for example 95% is considered a faillure!)
